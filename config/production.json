@@ -1,0 +1,10 @@
+{
+    "App name": "FHA-1",
+    "jwtPrivate": " fha_jwtPrivateKey",
+    "mail":{
+        "mailHost":"mail_host_secret",
+        "mailUsername":"mail_username_secret",
+        "mailPassword":"mail_password_secret",
+        "mailPort":"mail_port_secret"
+    }
+}

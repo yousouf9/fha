@@ -1,0 +1,219 @@
+
+
+
+.header-wrapper{
+    padding-top: 110px;
+}
+a.active{
+    color: red !important;
+}
+
+
+nav a{
+    display: block !important;
+    position: relative;
+    color: #124265 !important;
+    transition: 0.3s;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+}
+
+/**** Property search logic here ***/
+.land{
+
+}
+.sales{
+
+}
+
+.hideSales{
+    display: none
+}
+.showLand{
+    display: block;
+}
+.hideLand{
+    display: none
+}
+.showSales{
+    display: block;
+}
+.salesGrey{
+    background-color: #88d498 !important;
+}
+.landGrey{
+
+}
+/*** Media Queries **/
+@media  (max-width: 992px) and (min-width: 0px) {
+    #home_search{
+        display: block;
+        width: 50%;
+       height: calc(1.5em + .75rem + 2px);
+       padding: .375rem .75rem;
+       font-size: 1rem;
+       font-weight: 400;
+       line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+    #home_search1{
+        display: none;
+    }
+   
+   
+}
+
+@media  (min-width: 993px){
+    #home_search{
+        display: none;
+    }
+    #home_search1{
+        display: block;
+        width: 30%;
+       height: calc(1.5em + .75rem + 2px);
+       padding: .375rem .75rem;
+       font-size: 1rem;
+       font-weight: 400;
+       line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+}
+
+
+
+/** Admin dashboard styling  */
+
+.admin_container{
+    position: relative;
+    overflow-x: hidden;
+    height: 500px;
+    border: 1px solid #1a936f;
+}
+
+.sideBar{
+    top: 0;
+    position: fixed;
+    height: 100vmax !important;
+    background: #fff;
+    z-index: 1345;
+    overflow-y: hidden;
+
+    box-shadow: 0 0.125rem 9.375rem rgba(90,97,105,.1), 0 0.25rem 0.5rem rgba(90,97,105,.12), 0 0.9375rem 1.375rem rgba(90,97,105,.1), 0 0.4375rem 2.1875rem rgba(165,182,201,.1);
+
+}
+.main_content{
+    top: 0;
+    position: absolute !important;
+    height: 60px;
+    z-index: 2;
+    box-shadow: 0 0.125rem 0.625rem rgba(90,97,105,.12)
+}
+img.user-avatar{
+    width: 38px !important;
+    height: 38px !important;
+}
+
+.nav-link-icon__wrapper{
+position: relative;
+}
+
+.nav-link-icon__wrapper svg:first-of-type{
+    position: absolute;
+    left: 20px;
+    top: 0;
+    height: 40px;
+    width: 30px;
+}
+.nav-link-icon__wrapper .counter{
+ position: absolute !important;
+ right: 10px;
+ top: 10px
+
+}
+
+.nav-link-icon{
+    width: 70px !important;
+}
+
+.main-navbar__search input{
+
+   height: auto;
+   border: 0;
+}
+
+.main-navbar__search input:focus{
+ outline: none !important;
+}
+.main-navbar__search div .header-search{
+    background-color: #fff;
+    border: 0;
+}
+.openNav{
+    display: block !important;
+    width: 100%;
+}
+
+.toggle-sidebar-main{
+  padding-top:  20px !important;
+}
+
+.nav-wrapper{
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: calc(100vh - 3.75rem - 1px);
+}
+.nav-wrapper .nav-item, .nav-wrapper .nav-link{
+    font-weight: 400;
+    color:  #3d5170;
+    padding: 20px;
+}
+.nav-wrapper .nav-link span{
+    padding-left: 15px;
+}
+.sidenav_items{
+    list-style: none;
+    white-space: nowrap;
+    min-width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    font-size: 16px;
+}
+
+.sidenav_items:hover{
+    background-color: #88d4982d ;
+    color:#fff !important ;
+    border-left: 2px solid #1a936f;
+}
+
+/** Custome buttons **/
+
+
+.custom-control-input:not(:disabled):active~.custom-control-label::before {
+    color: #fff;
+    background-color: #1a936f !important;
+    border-color: #1a936f !important;
+}
+.custom-control-input:focus:not(:checked)~.custom-control-label::before {
+    border-color: #1a936f !important;
+}
+.custom-control-label::before, .custom-file-label, .custom-select {
+    transition: background-color .15s ease-in-out, border-color .15s ease-in-out,box-shadow .15s ease-in-out !important;
+    outline: #fff;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: #1a936f !important;
+    background-color: #1a936f !important;
+    outline: #fff;
+}

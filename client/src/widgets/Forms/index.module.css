@@ -1,0 +1,49 @@
+
+.labelError{
+    font-size: 12px;
+    font-weight: 300;
+    color: #fcb1b1;
+}
+
+.formContainer{
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.formContainer input, .formContainer  textarea, .formContainer  select{
+    color:  #000000;
+    width: 80%;
+    margin: 5px 0;
+    border: 0;
+    border-bottom: 1px solid #88d498;
+    font-size: 16px;
+    padding: 5px;
+   
+}
+.formContainer textarea{
+ height: 40px;
+}
+
+.formContainer input:focus,
+.formContainer select:focus,
+.formContainer textarea:focus{
+    outline: none !important; 
+}
+
+.formContainer
+
+
+::placeholder { 
+    color:  #1a936f;
+    opacity: 1;
+  }
+
+ button {
+     background-color:#88d498;
+     border: 1px solid  #1a936f;
+     color: #ffffff;
+ } 
