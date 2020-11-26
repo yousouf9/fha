@@ -65,12 +65,22 @@ if(!config.get("jwtPrivate")){
 
  
 //middleware
-app.use('/static', express.static('./server/static'));
+
+const storage = multer.diskStorage({
+    destination: function (req, file, cb) {
+    cb(null, 'public')
+  },
+  filename: function (req, file, cb) {
+    cb(null, Date.now() + '-' +file.originalname )
+  }
+})
 
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}))   
 app.use(cookieParser());
+
+app.use(express.static('client/build'))
 
 
 
